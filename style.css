@@ -6,9 +6,10 @@ body {
   }
   
   header {
-    background-color: #e0ffff; /* Lighter blue */
+    background-color: #fff; /* White background for header */
     padding: 20px;
     text-align: center;
+    position: relative;
   }
   
   h1, h2 {
@@ -26,15 +27,23 @@ body {
     color: #333; /* Dark gray */
   }
   
+  header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: auto;
+  }
+  
   main {
     padding: 20px;
   }
   
   section {
     margin-bottom: 20px;
-    border: 1px solid #ddd; /* Light gray border */
-    padding: 10px;
     border-radius: 5px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
   }
   
   h3 {
@@ -52,14 +61,21 @@ body {
     line-height: 1.5; /* Increase line spacing for readability */
   }
   
-  .skills ul {
-    list-style: none; /* Remove default bullet points */
-    padding: 0;
-    margin: 0;
+  .skills {
+    text-align: center;
   }
   
-  .skills li {
-    margin-bottom: 5px;
+  .skill-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .skill-icons img {
+    width: 50px;
+    height: auto;
+    margin: 5px;
   }
   
   .projects a {
@@ -76,6 +92,6 @@ body {
   footer {
     text-align: center;
     padding: 10px;
-    background-color: #e0ffff; /* Lighter blue */
+    background-color: #fff; /* White background for footer */
   }
   
