@@ -1,42 +1,68 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif; /* Use a modern font like Poppins */
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #0f0f0f, #ff0000, #00ffff); /* Neon background gradient */
-  background-size: cover; /* Stretch gradient to cover entire screen */
-  animation: neonBackground 10s ease-in-out infinite alternate; /* Add animation for color shift */
+  background-color: #fff; /* Set background to white */
 }
 
-@keyframes neonBackground {
-  from { background: linear-gradient(to right, #0f0f0f, #ff0000, #00ffff); }
-  to { background: linear-gradient(to right, #00ffff, #ff0000, #0f0f0f); }
+.gif-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
 }
 
 header {
-  background-color: #0f0; /* Use a vibrant blue for header */
+  background-color: #f1f1f1; /* Optional light gray background for header */
   padding: 20px;
   text-align: center;
-  color: #fff; /* Set text to white */
+  color: #000; /* Set text to black */
+  font-size: 2em; /* Increase header font size */
+  font-family: 'Sacramento', cursive; /* Use a more decorative font for header */
 }
 
 h1 {
   margin: 0;
-  text-shadow: 0 0 5px #0ff, 0 0 10px #00f; /* Add neon text shadow */
+}
+
+.skills {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif; /* Use a clean font for skills section */
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px; /* Adjust width as needed */
+}
+
+.skill h3 {
+  margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif; /* Use a clean font for skill titles */
+  font-size: 1.2em; /* Increase skill title size */
+  font-weight: bold; /* Make skill titles bold */
 }
 
 .image-section {
   margin: 20px;
   padding: 20px;
-  border: 1px solid rgba(255,255,255,0.2); /* White border with low opacity */
-  border-radius: 5px;
-  text-align: center;
-  background-color: #000; /* Set background to black for sections */
 }
 
 .image-section h2 {
   margin-bottom: 10px;
-  color: #fff; /* Set text to white */
-  text-shadow: 0 0 5px #0ff, 0 0 10px #00f; /* Add neon text shadow */
+  color: #000; /* Set text to black */
+  font-family: 'Roboto Slab', serif; /* Use a serif font for section titles */
+  font-size: 1.5em; /* Increase section title size */
 }
 
 .image-section img {
@@ -48,12 +74,12 @@ h1 {
 .image-section p {
   font-size: 16px;
   line-height: 1.5;
-  color: #fff; /* Set text to white */
+  color: #000; /* Set text to black */
 }
 
 footer {
-  background-color: #0f0; /* Use a vibrant blue for footer */
+  background-color: #f1f1f1; /* Optional light gray background for footer */
   padding: 10px;
   text-align: center;
-  color: #fff; /* Set text to white */
+  color: #000; /* Set text to black */
 }
