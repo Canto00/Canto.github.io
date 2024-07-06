@@ -2,7 +2,14 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000; /* Set background to black for neon effect */
+  background: linear-gradient(to right, #0f0f0f, #ff0000, #00ffff); /* Neon background gradient */
+  background-size: cover; /* Stretch gradient to cover entire screen */
+  animation: neonBackground 10s ease-in-out infinite alternate; /* Add animation for color shift */
+}
+
+@keyframes neonBackground {
+  from { background: linear-gradient(to right, #0f0f0f, #ff0000, #00ffff); }
+  to { background: linear-gradient(to right, #00ffff, #ff0000, #0f0f0f); }
 }
 
 header {
