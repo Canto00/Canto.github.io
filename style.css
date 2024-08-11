@@ -1,85 +1,43 @@
-body {
-  font-family: 'Poppins', sans-serif; /* Use a modern font like Poppins */
+* {
   margin: 0;
   padding: 0;
-  background-color: #fff; /* Set background to white */
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.gif-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-}
-
-header {
-  background-color: #f1f1f1; /* Optional light gray background for header */
-  padding: 20px;
-  text-align: center;
-  color: #000; /* Set text to black */
-  font-size: 2em; /* Increase header font size */
-  font-family: 'Sacramento', cursive; /* Use a more decorative font for header */
-}
-
-h1 {
-  margin: 0;
-}
-
-.skills {
-  text-align: center;
-  padding: 20px;
-  font-family: 'Roboto', sans-serif; /* Use a clean font for skills section */
-}
-
-.skill-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.skill {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  width: 200px; /* Adjust width as needed */
-}
-
-.skill h3 {
-  margin-bottom: 5px;
-  font-family: 'Open Sans', sans-serif; /* Use a clean font for skill titles */
-  font-size: 1.2em; /* Increase skill title size */
-  font-weight: bold; /* Make skill titles bold */
-}
-
-.image-section {
-  margin: 20px;
-  padding: 20px;
-}
-
-.image-section h2 {
-  margin-bottom: 10px;
-  color: #000; /* Set text to black */
-  font-family: 'Roboto Slab', serif; /* Use a serif font for section titles */
-  font-size: 1.5em; /* Increase section title size */
-}
-
-.image-section img {
+body {
   width: 100%;
-  display: block;
-  margin-bottom: 10px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe5e5;
 }
 
-.image-section p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000; /* Set text to black */
-}
-
-footer {
-  background-color: #f1f1f1; /* Optional light gray background for footer */
-  padding: 10px;
+.container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  color: #000; /* Set text to black */
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.container .tenor-gif-embed {
+  max-width: 200px;
+}
+
+.container .btn {
+  display: flex;
+  gap: 25px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #111;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
 }
